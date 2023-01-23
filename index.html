@@ -26,10 +26,21 @@
             </form>
         </div>
         <div id="tasks">
-            <h2 class="task-list">Current tasks</h2>
-            <ul class="task-list-elements">
-                <li>example 1 <input id="task-edit" type="button" value="edit"><input id="task-delete" type="button" value="delete"></li>
-            </ul>
+            
+            <div class="task">
+                <div class="content">
+                    <input  type="text"
+                            class="text"
+                            value="Example task"
+                            readonly
+                    />    
+                </div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+
         </div>
     </main>
     <footer>
