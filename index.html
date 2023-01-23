@@ -8,44 +8,60 @@
     <link rel="stylesheet" href="/resources/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Stuff to do</h1>
-    </header>
-    <main>
-        <div class="to-to-list">
-            <h2 class="input">Add new task</h2>
-            <form id="new-task-form">
-                <input  type="text"
-                        id="new-task-input"
-                        placeholder="new task" 
-                >
-                <input  type="submit" 
-                        value="Submit"
-                        id="new-task-submit" 
-                >
-            </form>
-        </div>
-        <div id="tasks">
-            
-            <div class="task">
-                <div class="content">
+    <div class="app">
+        <header>
+            <h1>Stuff to do</h1>
+        </header>
+        <main>
+            <div class="add-new-task">
+                <h2 class="input">Add new task</h2>
+                <form id="new-task-form">
                     <input  type="text"
-                            class="text"
-                            value="Example task"
-                            readonly
-                    />    
-                </div>
-                <div class="actions">
-                    <button class="edit">Edit</button>
-                    <button class="delete">Delete</button>
-                </div>
+                            id="new-task-input"
+                            placeholder="new task" 
+                    >
+                    <input  type="submit" 
+                            value="Submit"
+                            id="new-task-submit" 
+                    >
+                </form>
             </div>
-
-        </div>
-    </main>
-    <footer>
-        <p>Copyright Matti Räty</p>
-    </footer>
+            <h2>My Tasks</h2> 
+            <div id="tasks">
+              
+                <div class="task">
+                    <div class="content">
+                        <input  type="text"
+                                class="text"
+                                value="Example task"
+                                readonly
+                        />    
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="task">
+                    <div class="content">
+                        <input  type="text"
+                                class="text"
+                                value="Example task"
+                                readonly
+                        />    
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                   
+            </div>
+        </main>
+        <footer>
+            <p>Copyright Matti Räty</p>
+        </footer>
+    </div>
     <script src="/script/script.js"></script>
 </body>
 </html>
