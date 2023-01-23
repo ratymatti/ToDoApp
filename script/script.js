@@ -1,1 +1,6 @@
-#Script file
+/**
+ * Script file 
+ */
+
+console.log('Hello there!');
+
