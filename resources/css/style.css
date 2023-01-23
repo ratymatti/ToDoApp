@@ -1,16 +1,81 @@
+:root {
+    --dark: black;
+    --darker: lightgrey;
+    --light: white;
+}
+
 body {
     margin: 20px;
+    background: rgb(131,58,180);
+    background: linear-gradient(125deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: var(--dark);
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    margin: 25px;
+    background-color: var(--light);
+    height: 500px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    border-radius: 10px;
 }
 
 header {
     font-size: 20px;
 }
 
-main {
-    height: 600px;
-    display: flex;
+#add-new-task {
+    margin: 20px;
+    border: 1px solid var(--darker);
+    border-radius: 5px;
 }
 
-footer {
-    text-align: right;
+#new-task-form {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#new-task-input {
+    width: 70%;
+    border: 0px;
+}
+
+#new-task-submit {
+    width: 20%;
+    background-color: var(--darker);
+    border-radius: 5px;
+    border: 0px;
+}
+
+#new-task-submit:hover {
+    background-color: lightgreen;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.task {
+    background-color: var(--darker);
+    margin: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.text {
+    background-color: var(--darker);
+    border: 0px;
 }

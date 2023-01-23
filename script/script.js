@@ -36,6 +36,39 @@ window.addEventListener('load', () => {
 
         taskContentElement.appendChild(taskInputElement);
 
+        const taskActionsElement = document.createElement('div');
+        taskActionsElement.classList.add('actions');
+
+        const taskEditElement = document.createElement('button');
+        taskEditElement.classList.add('edit');
+        taskEditElement.innerHTML = 'Edit';
+
+        const taskDeleteElement = document.createElement('button');
+        taskDeleteElement.classList.add('delete');
+        taskDeleteElement.innerHTML = 'Delete';
+
+        taskActionsElement.appendChild(taskEditElement);
+        taskActionsElement.appendChild(taskDeleteElement);
+
+        taskElement.appendChild(taskActionsElement);
+
         listElements.appendChild(taskElement);
+
+        input.value = '';
+
+        taskEditElement.addEventListener('click', () => {
+            if (taskEditElement.innerText.toLowerCase() === 'edit') {
+                taskInputElement.removeAttribute('readonly');
+                taskInputElement.focus();
+                taskEditElement.innerText = 'Save';
+            } else {
+                taskInputElement.setAttribute('readonly', 'readonly');
+                taskEditElement.innerText = 'Edit';
+            }  
+        });
+
+        taskDeleteElement.addEventListener('click', () => {
+            listElements.removeChild(taskElement);
+        });
     })
 })
