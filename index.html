@@ -14,19 +14,20 @@
     <main>
         <div class="to-to-list">
             <h2 class="input">Add new task</h2>
-            <form action="">
-                <label for="new-task">
-                    New task
-                </label>
-                <input type="text" >
-                <button type="submit">Submit</button>
+            <form id="new-task-form">
+                <input  type="text"
+                        id="new-task-input"
+                        placeholder="new task" 
+                >
+                <input  type="submit" 
+                        value="Submit"
+                        id="new-task-submit" 
+                >
             </form>
             
             <h2 class="task-list">Current tasks</h2>
             <ul class="task-list-elements">
-                <li>example 1</li>
-                <li>example 2</li>
-                <li>example 3</li>
+                <li>example 1 <input type="button" value="edit"><input type="button" value="delete"></li>
             </ul>
         </div>
     </main>
