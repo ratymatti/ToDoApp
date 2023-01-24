@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Work+Sans:ital,wght@0,400;0,500;0,800;1,200&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
 :root {
     --dark: black;
     --darker: lightgrey;
     --light: white;
+    --green: rgba(65,180,0,0.8);
+    --red: rgba(253,29,29,1);
 }
 
 body {
@@ -58,12 +66,27 @@ header {
 }
 
 #new-task-submit:hover {
-    background-color: lightgreen;
+    background-color: var(--green);
+    color: var(--light);
 }
 
 #tasks {
     display: flex;
     flex-direction: column;
+}
+
+#tasks .edit:hover {
+    background-color: var(--green);
+    border: 0px;
+    border-radius: 5px;
+    color: var(--light);
+}
+
+#tasks .delete:hover {
+    background-color: var(--red);
+    border: 0px;
+    border-radius: 5px;
+    color: var(--light);
 }
 
 .task {
