@@ -10,17 +10,17 @@
     --light: white;
     --green: rgba(65,180,0,0.8);
     --red: rgba(253,29,29,1);
+    --button: darkgrey;
 }
 
 body {
-    margin: 20px;
-    background: rgb(131,58,180);
     background: linear-gradient(125deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     color: var(--dark);
-    height: 800px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px 0px 800px 0px;
 }
 
 .app {
@@ -56,6 +56,23 @@ header {
 #new-task-input {
     width: 70%;
     border: 0px;
+    
+}
+
+#new-task-input:hover {
+    cursor: pointer;
+}
+
+#new-task-input:hover::placeholder {
+    text-decoration: underline;
+}
+
+#new-task-input:focus-visible {
+    outline: 0px;
+}
+
+#new-task-input:focus::placeholder {
+    color: var(--light);
 }
 
 #new-task-submit {
@@ -63,6 +80,7 @@ header {
     background-color: var(--darker);
     border-radius: 5px;
     border: 0px;
+    font-weight: bold;
 }
 
 #new-task-submit:hover {
@@ -73,6 +91,22 @@ header {
 #tasks {
     display: flex;
     flex-direction: column;
+}
+
+#tasks .edit {
+    font-weight: bold;
+    color: var(--button);
+    border: 0px;
+    background-color: var(--light);
+    border-radius: 5px;
+}
+
+#tasks .delete {
+    font-weight: bold;
+    color: var(--button);
+    border: 0px;
+    background-color: var(--light);
+    border-radius: 5px;
 }
 
 #tasks .edit:hover {
@@ -103,5 +137,6 @@ header {
 .text {
     background-color: var(--darker);
     border: 0px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
-
