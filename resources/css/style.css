@@ -140,3 +140,51 @@ header {
     font-weight: bold;
     letter-spacing: 0.5px;
 }
+
+@media screen and (max-width: 414px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .app {
+        max-width: 350px;
+        min-height: 650px;
+    }
+
+    form {
+        max-width: 275px;
+        font-size: 1.2rem;
+    }
+
+    .task {
+        max-width: 275px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .app {
+        max-width: 300px;
+        min-height: 400px;
+    }
+
+    form {
+        max-width: 220px;
+        font-size: 1.2rem;
+    }
+
+    .task {
+        max-width: 220px;
+        display: block;
+    }
+
+    .edit {
+        font-size: 0.5rem;
+    }
+    .delete {
+        font-size: 0.5rem;
+    }
+}
