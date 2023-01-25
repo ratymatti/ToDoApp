@@ -161,7 +161,7 @@ header {
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 377px) {
     h1 {
         font-size: 1.5rem;
     }
