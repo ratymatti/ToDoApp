@@ -81,6 +81,7 @@ header {
     border-radius: 5px;
     border: 0px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 #new-task-submit:hover {
@@ -99,6 +100,7 @@ header {
     border: 0px;
     background-color: var(--light);
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 #tasks .delete {
@@ -107,6 +109,7 @@ header {
     border: 0px;
     background-color: var(--light);
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 #tasks .edit:hover {
